@@ -62,6 +62,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="4cb-eu-Bg6" kind="push" identifier="DetailSegue" id="ZwJ-If-dM7"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -80,6 +83,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2F1-Zx-tID" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2010" y="274"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="1KV-ej-LjE">
+            <objects>
+                <viewController id="4cb-eu-Bg6" customClass="PhotoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ANG-0e-Ggm"/>
+                        <viewControllerLayoutGuide type="bottom" id="sl3-qQ-Fj0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bKb-gF-12F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4E-SH-eWa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add Filter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="562" width="67" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addFilterButtonPressed:" destination="4cb-eu-Bg6" eventType="touchUpInside" id="mwB-h4-oOz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4Q-ri-gjN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="322" y="562" width="44" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="4cb-eu-Bg6" eventType="touchUpInside" id="52U-Vc-4ZX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dy7-7j-sAV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="490"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="x4E-SH-eWa"/>
+                                <exclude reference="D4Q-ri-gjN"/>
+                                <exclude reference="dy7-7j-sAV"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="x4E-SH-eWa"/>
+                                <include reference="D4Q-ri-gjN"/>
+                                <include reference="dy7-7j-sAV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="yt5-ZU-ITG"/>
+                    <connections>
+                        <outlet property="imageView" destination="dy7-7j-sAV" id="wfb-Wz-1i9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRE-4x-MGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2890.5" y="277"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wym-Po-TjK">

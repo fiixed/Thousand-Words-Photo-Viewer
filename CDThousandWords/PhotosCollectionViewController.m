@@ -11,6 +11,7 @@
 #import "Photo.h"
 #import "PictureDataTransformer.h"
 #import "CoreDataHelper.h"
+#import "PhotoDetailViewController.h"
 
 @interface PhotosCollectionViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -33,10 +34,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSSet *unorderedPhotos = self.album.photos;
-    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES];
-    NSArray *sortedPhotos = [unorderedPhotos sortedArrayUsingDescriptors:@[dateDescriptor]];
-    self.photos = [sortedPhotos mutableCopy];
+    
     
     
     // Uncomment the following line to preserve selection between presentations
@@ -48,20 +46,44 @@ static NSString * const reuseIdentifier = @"Cell";
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSSet *unorderedPhotos = self.album.photos;
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES];
+    NSArray *sortedPhotos = [unorderedPhotos sortedArrayUsingDescriptors:@[dateDescriptor]];
+    self.photos = [sortedPhotos mutableCopy];
+    
+    [self.collectionView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"DetailSegue"]) {
+        if ([segue.destinationViewController isKindOfClass:[PhotoDetailViewController class]]) {
+            PhotoDetailViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems]lastObject];
+            Photo *selectedPhoto = self.photos[indexPath.row];
+            targetViewController.photo = selectedPhoto;
+        }
+    }
 }
-*/
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"DetailSegue" sender:nil];
+}
+
 
 - (IBAction)cameraBarButtonItemPressed:(UIBarButtonItem *)sender
 {

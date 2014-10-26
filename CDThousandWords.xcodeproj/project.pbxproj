@@ -13,7 +13,6 @@
 		056721CA19F958DA0079B726 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056721C919F958DA0079B726 /* Images.xcassets */; };
 		056721CD19F958DA0079B726 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056721CB19F958DA0079B726 /* LaunchScreen.xib */; };
 		056721D919F958DA0079B726 /* CDThousandWordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721D819F958DA0079B726 /* CDThousandWordsTests.m */; };
-		056721E319F95AA10079B726 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056721E219F95AA10079B726 /* Storyboard.storyboard */; };
 		056721E619F95B420079B726 /* AlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721E519F95B420079B726 /* AlbumTableViewController.m */; };
 		056721EC19FAD6590079B726 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721EB19FAD6590079B726 /* CoreDataHelper.m */; };
 		056721EF19FAD9B60079B726 /* PhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721EE19FAD9B60079B726 /* PhotosCollectionViewController.m */; };
@@ -22,6 +21,8 @@
 		058F3A7319FC3A620062D406 /* PictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7219FC3A620062D406 /* PictureDataTransformer.m */; };
 		058F3A7619FD5E9E0062D406 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7519FD5E9E0062D406 /* Photo.m */; };
 		058F3A7919FD5E9F0062D406 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7819FD5E9F0062D406 /* Album.m */; };
+		058F3A7C19FD72710062D406 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7B19FD72710062D406 /* PhotoDetailViewController.m */; };
+		058F3A7E19FD787C0062D406 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058F3A7D19FD787C0062D406 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		056721D219F958DA0079B726 /* CDThousandWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDThousandWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		056721D719F958DA0079B726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056721D819F958DA0079B726 /* CDThousandWordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDThousandWordsTests.m; sourceTree = "<group>"; };
-		056721E219F95AA10079B726 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		056721E419F95B420079B726 /* AlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewController.h; sourceTree = "<group>"; };
 		056721E519F95B420079B726 /* AlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewController.m; sourceTree = "<group>"; };
 		056721EA19FAD6590079B726 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
@@ -62,6 +62,9 @@
 		058F3A7519FD5E9E0062D406 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = ../Photo.m; sourceTree = "<group>"; };
 		058F3A7719FD5E9F0062D406 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Album.h; path = ../Album.h; sourceTree = "<group>"; };
 		058F3A7819FD5E9F0062D406 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Album.m; path = ../Album.m; sourceTree = "<group>"; };
+		058F3A7A19FD72710062D406 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		058F3A7B19FD72710062D406 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		058F3A7D19FD787C0062D406 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +106,9 @@
 		056721B819F958DA0079B726 /* CDThousandWords */ = {
 			isa = PBXGroup;
 			children = (
-				056721E219F95AA10079B726 /* Storyboard.storyboard */,
+				058F3A7D19FD787C0062D406 /* Storyboard.storyboard */,
+				058F3A7A19FD72710062D406 /* PhotoDetailViewController.h */,
+				058F3A7B19FD72710062D406 /* PhotoDetailViewController.m */,
 				058F3A6819FC11980062D406 /* PhotoCollectionViewCell.h */,
 				058F3A6919FC11980062D406 /* PhotoCollectionViewCell.m */,
 				056721E419F95B420079B726 /* AlbumTableViewController.h */,
@@ -244,8 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				056721CD19F958DA0079B726 /* LaunchScreen.xib in Resources */,
+				058F3A7E19FD787C0062D406 /* Storyboard.storyboard in Resources */,
 				056721CA19F958DA0079B726 /* Images.xcassets in Resources */,
-				056721E319F95AA10079B726 /* Storyboard.storyboard in Resources */,
 				058F3A6C19FC13C30062D406 /* astro.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				058F3A7319FC3A620062D406 /* PictureDataTransformer.m in Sources */,
+				058F3A7C19FD72710062D406 /* PhotoDetailViewController.m in Sources */,
 				056721EC19FAD6590079B726 /* CoreDataHelper.m in Sources */,
 				056721BF19F958DA0079B726 /* AppDelegate.m in Sources */,
 				058F3A7919FD5E9F0062D406 /* Album.m in Sources */,
