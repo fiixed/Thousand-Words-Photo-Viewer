@@ -10,11 +10,18 @@
 		056721BC19F958DA0079B726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721BB19F958DA0079B726 /* main.m */; };
 		056721BF19F958DA0079B726 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721BE19F958DA0079B726 /* AppDelegate.m */; };
 		056721C219F958DA0079B726 /* CDThousandWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 056721C019F958DA0079B726 /* CDThousandWords.xcdatamodeld */; };
-		056721C519F958DA0079B726 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721C419F958DA0079B726 /* ViewController.m */; };
-		056721C819F958DA0079B726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056721C619F958DA0079B726 /* Main.storyboard */; };
 		056721CA19F958DA0079B726 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056721C919F958DA0079B726 /* Images.xcassets */; };
 		056721CD19F958DA0079B726 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056721CB19F958DA0079B726 /* LaunchScreen.xib */; };
 		056721D919F958DA0079B726 /* CDThousandWordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721D819F958DA0079B726 /* CDThousandWordsTests.m */; };
+		056721E319F95AA10079B726 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056721E219F95AA10079B726 /* Storyboard.storyboard */; };
+		056721E619F95B420079B726 /* AlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721E519F95B420079B726 /* AlbumTableViewController.m */; };
+		056721EC19FAD6590079B726 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721EB19FAD6590079B726 /* CoreDataHelper.m */; };
+		056721EF19FAD9B60079B726 /* PhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056721EE19FAD9B60079B726 /* PhotosCollectionViewController.m */; };
+		058F3A6A19FC11980062D406 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A6919FC11980062D406 /* PhotoCollectionViewCell.m */; };
+		058F3A6C19FC13C30062D406 /* astro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058F3A6B19FC13C30062D406 /* astro.jpg */; };
+		058F3A7319FC3A620062D406 /* PictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7219FC3A620062D406 /* PictureDataTransformer.m */; };
+		058F3A7619FD5E9E0062D406 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7519FD5E9E0062D406 /* Photo.m */; };
+		058F3A7919FD5E9F0062D406 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F3A7819FD5E9F0062D406 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +41,27 @@
 		056721BD19F958DA0079B726 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		056721BE19F958DA0079B726 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		056721C119F958DA0079B726 /* CDThousandWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDThousandWords.xcdatamodel; sourceTree = "<group>"; };
-		056721C319F958DA0079B726 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		056721C419F958DA0079B726 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		056721C719F958DA0079B726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		056721C919F958DA0079B726 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		056721CC19F958DA0079B726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		056721D219F958DA0079B726 /* CDThousandWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDThousandWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		056721D719F958DA0079B726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056721D819F958DA0079B726 /* CDThousandWordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDThousandWordsTests.m; sourceTree = "<group>"; };
+		056721E219F95AA10079B726 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		056721E419F95B420079B726 /* AlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewController.h; sourceTree = "<group>"; };
+		056721E519F95B420079B726 /* AlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewController.m; sourceTree = "<group>"; };
+		056721EA19FAD6590079B726 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		056721EB19FAD6590079B726 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		056721ED19FAD9B60079B726 /* PhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionViewController.h; sourceTree = "<group>"; };
+		056721EE19FAD9B60079B726 /* PhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionViewController.m; sourceTree = "<group>"; };
+		058F3A6819FC11980062D406 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		058F3A6919FC11980062D406 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		058F3A6B19FC13C30062D406 /* astro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = astro.jpg; sourceTree = "<group>"; };
+		058F3A7119FC3A620062D406 /* PictureDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureDataTransformer.h; sourceTree = "<group>"; };
+		058F3A7219FC3A620062D406 /* PictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureDataTransformer.m; sourceTree = "<group>"; };
+		058F3A7419FD5E9E0062D406 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = ../Photo.h; sourceTree = "<group>"; };
+		058F3A7519FD5E9E0062D406 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = ../Photo.m; sourceTree = "<group>"; };
+		058F3A7719FD5E9F0062D406 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Album.h; path = ../Album.h; sourceTree = "<group>"; };
+		058F3A7819FD5E9F0062D406 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Album.m; path = ../Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +103,18 @@
 		056721B819F958DA0079B726 /* CDThousandWords */ = {
 			isa = PBXGroup;
 			children = (
-				056721BD19F958DA0079B726 /* AppDelegate.h */,
-				056721BE19F958DA0079B726 /* AppDelegate.m */,
-				056721C319F958DA0079B726 /* ViewController.h */,
-				056721C419F958DA0079B726 /* ViewController.m */,
-				056721C619F958DA0079B726 /* Main.storyboard */,
+				056721E219F95AA10079B726 /* Storyboard.storyboard */,
+				058F3A6819FC11980062D406 /* PhotoCollectionViewCell.h */,
+				058F3A6919FC11980062D406 /* PhotoCollectionViewCell.m */,
+				056721E419F95B420079B726 /* AlbumTableViewController.h */,
+				056721E519F95B420079B726 /* AlbumTableViewController.m */,
+				056721ED19FAD9B60079B726 /* PhotosCollectionViewController.h */,
+				056721EE19FAD9B60079B726 /* PhotosCollectionViewController.m */,
+				056721EA19FAD6590079B726 /* CoreDataHelper.h */,
+				056721EB19FAD6590079B726 /* CoreDataHelper.m */,
 				056721C919F958DA0079B726 /* Images.xcassets */,
 				056721CB19F958DA0079B726 /* LaunchScreen.xib */,
-				056721C019F958DA0079B726 /* CDThousandWords.xcdatamodeld */,
+				058F3A7019FC23680062D406 /* CoreData */,
 				056721B919F958DA0079B726 /* Supporting Files */,
 			);
 			path = CDThousandWords;
@@ -99,6 +123,9 @@
 		056721B919F958DA0079B726 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				058F3A6B19FC13C30062D406 /* astro.jpg */,
+				056721BD19F958DA0079B726 /* AppDelegate.h */,
+				056721BE19F958DA0079B726 /* AppDelegate.m */,
 				056721BA19F958DA0079B726 /* Info.plist */,
 				056721BB19F958DA0079B726 /* main.m */,
 			);
@@ -120,6 +147,20 @@
 				056721D719F958DA0079B726 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		058F3A7019FC23680062D406 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				056721C019F958DA0079B726 /* CDThousandWords.xcdatamodeld */,
+				058F3A7719FD5E9F0062D406 /* Album.h */,
+				058F3A7819FD5E9F0062D406 /* Album.m */,
+				058F3A7419FD5E9E0062D406 /* Photo.h */,
+				058F3A7519FD5E9E0062D406 /* Photo.m */,
+				058F3A7119FC3A620062D406 /* PictureDataTransformer.h */,
+				058F3A7219FC3A620062D406 /* PictureDataTransformer.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056721C819F958DA0079B726 /* Main.storyboard in Resources */,
 				056721CD19F958DA0079B726 /* LaunchScreen.xib in Resources */,
 				056721CA19F958DA0079B726 /* Images.xcassets in Resources */,
+				056721E319F95AA10079B726 /* Storyboard.storyboard in Resources */,
+				058F3A6C19FC13C30062D406 /* astro.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058F3A7319FC3A620062D406 /* PictureDataTransformer.m in Sources */,
+				056721EC19FAD6590079B726 /* CoreDataHelper.m in Sources */,
 				056721BF19F958DA0079B726 /* AppDelegate.m in Sources */,
+				058F3A7919FD5E9F0062D406 /* Album.m in Sources */,
+				058F3A7619FD5E9E0062D406 /* Photo.m in Sources */,
+				056721E619F95B420079B726 /* AlbumTableViewController.m in Sources */,
+				056721EF19FAD9B60079B726 /* PhotosCollectionViewController.m in Sources */,
 				056721BC19F958DA0079B726 /* main.m in Sources */,
-				056721C519F958DA0079B726 /* ViewController.m in Sources */,
+				058F3A6A19FC11980062D406 /* PhotoCollectionViewCell.m in Sources */,
 				056721C219F958DA0079B726 /* CDThousandWords.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		056721C619F958DA0079B726 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				056721C719F958DA0079B726 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		056721CB19F958DA0079B726 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +456,7 @@
 				056721DE19F958DA0079B726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		056721DF19F958DA0079B726 /* Build configuration list for PBXNativeTarget "CDThousandWordsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +465,7 @@
 				056721E119F958DA0079B726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
